@@ -407,7 +407,6 @@ app.delete('/v1/servico/:id', verifyJWT, cors(), jsonParser, async function(requ
 //EnPoint para buscar um serviço pelo ID
 app.get('/v1/servico/:id', verifyJWT, cors(), async function(request, response) {
 
-    console.log("teste")
     let statusCode;
     let message;
     let id = request.params.id
@@ -1334,8 +1333,6 @@ app.put('/v1/pizzaLikes/:id', verifyJWT, cors(), jsonParser, async function(requ
 //ativa o servidor para receber requisições HTTP
 app.listen(1206, function() {
 
-    console.log("teste")
     console.log('Servidor aguardando requisições...');
-
 
 });

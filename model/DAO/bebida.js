@@ -86,7 +86,7 @@ const updateBebida = async function (bebida) {
     }
 
     catch (error) {
-        console.log('teste')
+        
         return false;
         
     }
